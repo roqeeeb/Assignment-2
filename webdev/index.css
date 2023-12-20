@@ -1,0 +1,204 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&display=swap");
+
+
+body{
+    font: 15px/1.5 "Lato";
+    padding: 0;
+    margin: 0;
+    background-color: #fff;
+}
+
+section{
+    display: flex;
+}
+
+label{
+    color: var(--Text-Headings, #011C34);
+    font-family: "Lato";
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    letter-spacing: 0.1px;
+}
+
+button{
+    text-align: center;
+    font-family: "Lato";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    letter-spacing: 0.2px;
+    width: 500px;
+    height: 48px;
+    flex-shrink: 0;
+    background-color: var(--CL-Green, #2EC4B6);
+    border: 1px solid #2EC4B6;
+    color: #FFF;
+    filter: drop-shadow(0px 10px 40px rgba(0, 0, 0, 0.10));
+}
+
+.logo{
+    width: 77.333px;
+    height: 80px;
+    flex-shrink: 0;
+}
+
+h1{
+    color: var(--CL-Black, #000B0A);
+    font-family: "Lato";
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 50px; 
+    letter-spacing: -0.8px;
+}
+
+.indi{
+    margin-left: 10rem;
+    margin-top: 13rem;
+}
+
+.long-txt{
+    color: var(--CL-Grey, #737373);
+    font-family: "Lato";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 25px; 
+}
+
+form{
+    margin-bottom: 3rem;
+
+}
+
+.form-div{
+    position: relative;
+    border-radius: 6px;
+    background: #FFF;
+    box-shadow: 0px 4px 50px 0px rgba(4, 8, 19, 0.10);
+    flex-shrink: 0;
+    margin-top: 5rem;
+    margin-left: 10rem;
+    padding: 3rem 3rem;
+    padding-left: 3rem;
+    padding-top: 3rem;
+}
+
+
+.input-div,
+.inputs-div {
+    margin-bottom: 1.5em;
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+
+  }
+
+  .input-div div,
+  .inputs-div div{
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .input-div label, 
+  .inputs-div label{
+    font-family: "Lato";
+    font-size: .9rem;
+    color: var(--Text-Headings, #011C34);
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    padding-bottom: .5rem;
+    letter-spacing: 0.1px;
+  }
+  
+  .input-div input,
+  .inputs-div input,
+  .inputs-div select {
+  
+    padding: .7rem .7rem;
+    width: 227px;
+    flex-shrink: 0;
+    border-radius: 4px;
+    background: transparent;
+    border-radius: 2px;
+    border: 1px solid var(--CL-Gray-3, #F0F0F0);
+  }
+
+  .input-div div select,
+  .inputs-div div select{
+    padding: .7rem .7rem;
+    width: 250px;
+    /* height: 36px; */
+    flex-shrink: 0;
+    border-radius: 4px;
+    background: transparent;
+    border-radius: 2px;
+    border: 1px solid var(--CL-Gray-3, #F0F0F0);
+
+  }
+
+  .btn-div{
+    justify-content: center;
+
+  }
+
+  .btn-div p{
+    color: #000;
+    font-family: "Lato";
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 25px; 
+    text-align: center;
+  }
+
+  .btn-div p a{
+    color: var(--CL-Green, #2EC4B6);
+    font-family: Sofia Pro;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 25px;
+    text-decoration-line: underline;
+  }
+
+  @media  (max-width:768px) {
+    section{
+        flex-direction: column;
+    }
+
+    .indi{
+        margin-left: 3rem;
+        margin-top: 5rem;
+    }
+
+    .form-div{
+        margin-left: 3rem;
+        margin-top: 5rem;
+        max-width: 300px;
+        max-height: 700px;
+        padding: 2rem 2rem;
+    }
+    .input-div,
+    .inputs-div{
+        display: block;
+    }
+    
+    .input-div div,
+    .inputs-div div{
+        margin-bottom: 1rem;
+    }
+
+    .btn-div{
+        margin-top: 10rem;
+    }
+
+    .btn-div button{
+        width: 300px;
+    }
+    
+  }
